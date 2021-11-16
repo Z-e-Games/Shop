@@ -21,3 +21,15 @@ function setSGPSBMasDefault(){
         alert('sorry you dont have enough coins')
     }
 }
+
+function moneyPerKillUpgrade(){
+    if(parseInt(localStorage.getItem('gold coins')) >= 3500 && localStorage.getItem('is signed in') === 'yes'){
+        localStorage.setItem('gold coins',parseInt(localStorage.getItem('gold coins'))-3500)
+        localStorage.setItem('coins per kill',parseInt(localStorage.getItem('coins per kill') ) + 1)
+        alert(`You now get ${parseInt(localStorage.getItem('coins per kill'))} soins per kill.`)
+    }else if(localStorage.getItem('is signed in') === 'no'){
+        alert('please sign in first')
+    }else if(parseInt(localStorage.getItem('gold coins')) <= 500 && localStorage.getItem('is signed in') === 'yes'){
+        alert('sorry you dont have enough coins')
+    }
+}
