@@ -33,3 +33,15 @@ function moneyPerKillUpgrade(){
         alert('sorry you dont have enough coins')
     }
 }
+
+function useElfSkin(){
+    if(parseInt(localStorage.getItem('gold coins')) >= 200 && localStorage.getItem('is signed in') === 'yes'){
+        localStorage.setItem('gold coins',parseInt(localStorage.getItem('gold coins')) - 200)
+        localStorage.setItem('has elf skin', 'yes')
+        alert(`You will have the elf skin in the next game.`)
+    }else if(localStorage.getItem('is signed in') === 'no'){
+        alert('please sign in first')
+    }else if(parseInt(localStorage.getItem('gold coins')) <= 200 && localStorage.getItem('is signed in') === 'yes'){
+        alert('sorry you dont have enough coins')
+    }
+}
