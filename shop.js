@@ -38,7 +38,7 @@ function moneyPerKillUpgrade(){
         alert('sorry you dont have enough coins')
     }else if(parseInt(localStorage.getItem('coins per kill')) > 5){
         localStorage.setItem('coins per kill', 5)
-    }else if(parseInt(localStorage.getItem('coins per kill')) = 5){
+    }else if(parseInt(localStorage.getItem('coins per kill')) === 5){
         alert('You have maxed out on this upgrade')
     }
 }
