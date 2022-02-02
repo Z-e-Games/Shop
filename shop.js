@@ -9,7 +9,7 @@ function makePwrUpsLastOneSecLonger(){
         alert('sorry you dont have enough coins')
     }else if(parseInt(localStorage.getItem('ms per pwr up')) > 30){
         localStorage.setItem('ms per pwr up', 30)
-    }else if(parseInt(localStorage.getItem('ms per pwr up')) = 30){
+    }else if(parseInt(localStorage.getItem('ms per pwr up')) === 30){
         alert('You have maxed out on this upgrade')
     }
 }
