@@ -1,5 +1,5 @@
 function makePwrUpsLastOneSecLonger(){
-    if(parseInt(localStorage.getItem('gold coins')) >= 1000 && localStorage.getItem('is signed in') === 'yes' && parseInt(localStorage.getItem('ms per pwr up')) < 30){
+    if(parseInt(localStorage.getItem('gold coins')) >= 1000 && localStorage.getItem('is signed in') === 'yes' && parseInt(localStorage.getItem('ms per pwr up')) < 3000){
         localStorage.setItem('gold coins',parseInt(localStorage.getItem('gold coins'))-1000)
         localStorage.setItem('ms per pwr up',parseInt(localStorage.getItem('ms per pwr up') ) + 1000)
         alert(`your powerups now last ${parseInt(localStorage.getItem('ms per pwr up'))/1000} seconds`)
