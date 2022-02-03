@@ -7,8 +7,8 @@ function makePwrUpsLastOneSecLonger(){
         alert('please sign in first')
     }else if(parseInt(localStorage.getItem('gold coins')) <= 1000 && localStorage.getItem('is signed in') === 'yes'){
         alert('sorry you dont have enough coins')
-    }else if(parseInt(localStorage.getItem('ms per pwr up')) > 30){
-        localStorage.setItem('ms per pwr up', 30)
+    }else if(parseInt(localStorage.getItem('ms per pwr up')) > 30000){
+        localStorage.setItem('ms per pwr up', 30000)
     }else if(parseInt(localStorage.getItem('ms per pwr up')) === 30000){
         alert('You have maxed out on this upgrade')
     }
