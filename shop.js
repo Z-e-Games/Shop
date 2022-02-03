@@ -1,4 +1,5 @@
 function makePwrUpsLastOneSecLonger(){
+    alert('asdasdasd')
     if(parseInt(localStorage.getItem('gold coins')) >= 1000 && localStorage.getItem('is signed in') === 'yes' && parseInt(localStorage.getItem('ms per pwr up')) < 30000){
         localStorage.setItem('gold coins',parseInt(localStorage.getItem('gold coins'))-1000)
         localStorage.setItem('ms per pwr up',parseInt(localStorage.getItem('ms per pwr up') ) + 1000)
