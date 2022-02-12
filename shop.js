@@ -38,7 +38,7 @@ function moneyPerKillUpgrade(){
         alert('sorry you dont have enough coins')
     }else if(parseInt(localStorage.getItem('coins per kill')) > 5){
         localStorage.setItem('coins per kill', 5)
-    }else if(parseInt(localStorage.getItem('coins per kill')) === 5){
+    }else if(parseInt(localStorage.getItem('coins per kill')) = 5){
         alert('You have maxed out on this upgrade')
     }
 }
@@ -46,8 +46,8 @@ function moneyPerKillUpgrade(){
 function useElfSkin(){
     if(parseInt(localStorage.getItem('gold coins')) >= 400 && localStorage.getItem('is signed in') === 'yes'){
         localStorage.setItem('gold coins',parseInt(localStorage.getItem('gold coins')) - 400)
-        localStorage.setItem('has elf skin', 'yes')
-        alert(`You will have the elf skin in the next game.`)
+        localStorage.setItem('has season skin', 'yes')
+        alert(`You will have the GOLDskin in the next game.`)
     }else if(localStorage.getItem('is signed in') === 'no'){
         alert('please sign in first')
     }else if(parseInt(localStorage.getItem('gold coins')) <= 400 && localStorage.getItem('is signed in') === 'yes'){
